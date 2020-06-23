@@ -60,4 +60,9 @@ input[type="submit"]:hover {
   #title {
     font-size: 6vw;
   }
+  
+  .form-group {
+    height: 30px;
+    font-size: 20px;
+  }
 }
