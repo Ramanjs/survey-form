@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Survey Form</title>
+</head>
+<body>
+	<h1 id="title"><i>The Odin Project</i> Survey Form</h1>
+<p id="description">Thank you for taking the time to fill out this form</p>
+<form id="survey-form">
+	<label for="name" id="name-label">Name</label>
+	<input id="name" placeholder="Enter your name" class="input-group form-group" required></input>
+	<label for="email" id="email-label">Email</label>
+	<input type="email" id="email" class="input-group form-group" placeholder="Enter your email" required></input>
+	<label for="number" id="number-label">Age</label>
+	<input type="number" id="number" class="input-group form-group" min="10" max="100" placeholder="Age"></input>
+	<label for="dropdown">How did you get to know about The Odin Project?</label>
+	<select id="dropdown" class="form-group">
+	<option value="">Select an option</option>
+	<option value="friend">Friends</option>
+	<option value="reddit">Reddit</option>
+	<option value="internet">Internet</option>
+	</select>
+	<p>Would you recommend The Odin Project to a friend?</p>
+	<label for="yes"><input type="radio" name="recmd" id="yes" checked>Yes</label>
+	<label for="no"><input type="radio" name="recmd" id="no">No</label>
+	<label for="maybe"><input type="radio" name="recmd" id="maybe">Maybe</label>
+	<p>Select the topics which you would like to see improved</p>
+
+	<label><input type="checkbox"> Web Dev 101</label>
+	<label><input type="checkbox"> HTML and CSS</label>
+	<label><input type="checkbox"> JavaScript</label>
+	<label><input type="checkbox"> Node.js</label>
+	<label><input type="checkbox"> Ruby on Rails</label>
+	<label><input type="checkbox"> Getting Hired</label>
+	<label><input type="checkbox"> Projects</label>
+
+	<p>Anything you would like to suggest?</p>
+	<textarea placeholder="Enter your suggestions here" class="form-group" rows="4"></textarea>
+	<input type="submit" class="form-group">
+</form>
+</body>
+</html>
